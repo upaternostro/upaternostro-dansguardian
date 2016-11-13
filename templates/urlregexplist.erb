@@ -1,0 +1,16 @@
+# Managed by puppet, do not edit!
+#URL modifying Regular Expressions
+#
+# The format is: "extended regular expression"->"replacement straight string"
+# E.g. "shit"->"censored" would replace all occurances of shit in any case.
+# Far more complicated matches are possible.  See other sources for examples
+# of extended regular expressions.
+#
+# Users are pointed at the replaced URL transparently.
+# Manipulates the URL to automatically switch on safe searching in Google,
+# Singingfish, Ilse, KEL, Lycos, Alltheweb, Yahoo, Hotbot, Wisenut,
+# Metacrawler.
+
+<% Array(@urlregexplist).each do |r| -%>
+<%= r %>
+<% end -%>

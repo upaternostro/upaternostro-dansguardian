@@ -1,0 +1,8 @@
+# Managed by puppet, do not edit!
+#Exception URLs based on Regular Expressions
+#
+# E.g. 'news' would unblock news.bbc.com etc
+
+<% Array(@exceptionregexpurllist).each do |exc| -%>
+<%= exc %>
+<% end -%>
