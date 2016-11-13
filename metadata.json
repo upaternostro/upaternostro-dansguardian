@@ -1,0 +1,14 @@
+{
+  "name": "upaternostro-dansguardian",
+  "version": "0.1.0",
+  "author": "upaternostro",
+  "summary": "Manage dansguardian web content filter",
+  "license": "GPL",
+  "source": "https://github.com/upaternostro/upaternostro-dansguardian",
+  "project_page": "https://github.com/upaternostro/upaternostro-dansguardian",
+  "issues_url": "https://github.com/upaternostro/upaternostro-dansguardian/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
