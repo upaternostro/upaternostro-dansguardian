@@ -236,7 +236,49 @@ class dansguardian::params {
   $bannedsite_blanketSSLblock = false
   $bannedsite_blanketIPblock = false
   $bannedsite_blanketIPSSLblock = false
-  $bannedsite_lists = []
+  $bannedsite_lists = [
+    #'adult',
+    #'aggressive',
+    #'artnudes',
+    #'audio-video',
+    #'beerliquorinfo',
+    #'beerliquorsale',
+    #'chat',
+    #'childcare',
+    #'clothing',
+    #'culinary',
+    #'dialers',
+    #'drugs',
+    #'entertainment',
+    #'forums',
+    #'frencheducation',
+    #'gambling',
+    #'government',
+    #'hacking',
+    #'homerepair',
+    #'hygiene',
+    #'jewelry',
+    #'jobsearch',
+    #'kidstimewasting',
+    #'mail',
+    #'news',
+    #'onlineauctions',
+    #'onlinegames',
+    #'onlinepayment',
+    #'personalfinance',
+    #'pets',
+    #'porn',
+    #'proxy',
+    #'publicite',
+    #'redirector',
+    #'ringtones',
+    #'sportnews',
+    #'sports',
+    #'vacation',
+    #'violence',
+    #'virusinfected',
+    #'warez',
+  ]
     
   $phraselist = [
     #To enable several non-PICS self-labelling and self-rating systems.  
