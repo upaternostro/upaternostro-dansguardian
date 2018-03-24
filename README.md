@@ -15,33 +15,26 @@
 
 ## Overview
 
-A one-maybe-two sentence summary of what the module does/what problem it solves.
-This is your 30 second elevator pitch for your module. Consider including
-OS/Puppet version it works with.
+A puppet module to install, configure and manage DansGuardian, the web content filter.
+
+Tested on Debian 7 (wheezy) and puppet 3.8.
 
 ## Module Description
 
-If applicable, this section should have a brief description of the technology
-the module integrates with and what that integration enables. This section
-should answer the questions: "What does this module *do*?" and "Why would I use
-it?"
-
-If your module has a range of functionality (installation, configuration,
-management, etc.) this is the time to mention it.
+This module installs DansGuardian, let you modify various aspects of its configuration
+and manages the service.
 
 ## Setup
 
 ### What dansguardian affects
 
-* A list of files, packages, services, or operations that the module will alter,
-  impact, or execute on the system it's installed on.
-* This is a great place to stick any warnings.
-* Can be in list or paragraph form.
+* install dansguardian package and its dependencies
+* manages /etc/dansguardian files
 
 ### Setup Requirements **OPTIONAL**
 
-If your module requires anything extra before setting up (pluginsync enabled,
-etc.), mention it here.
+DansGuardian requires a proxy (squid or other similar) to be installed somewhere,
+by default on the same server where DG is installed.
 
 ### Beginning with dansguardian
 
@@ -65,7 +58,8 @@ with things. (We are working on automating this section!)
 
 ## Limitations
 
-This is where you list OS compatibility, version compatibility, etc.
+At this moment works just on Debian systems. Please modify params.pp if you need
+other system support.
 
 ## Development
 
